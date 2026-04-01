@@ -148,7 +148,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Server"
+                "text": "Web Application Server"
               },
               "body": {
                 "stroke": "#333333",
@@ -243,7 +243,7 @@
             "id": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
             "data": {
               "type": "tm.Process",
-              "name": "Web Server",
+              "name": "Web Application Server",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -255,14 +255,7 @@
               "privilegeLevel": "",
               "threats": []
             },
-            "zIndex": 2,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": 2
           }
         ]
       }
