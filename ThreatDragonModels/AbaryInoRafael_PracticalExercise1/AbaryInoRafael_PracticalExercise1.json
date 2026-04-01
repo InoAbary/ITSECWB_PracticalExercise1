@@ -28,11 +28,11 @@
             },
             "attrs": {
               "text": {
-                "text": "Customer"
+                "text": "Client Frontend"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -124,17 +124,46 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Process",
-              "name": "Customer",
+              "name": "Client Frontend",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a28e5949-4f3e-4188-a755-114194708e21",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -148,7 +177,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Application Server"
+                "text": "Web Server Backend"
               },
               "body": {
                 "stroke": "#333333",
@@ -243,7 +272,7 @@
             "id": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
             "data": {
               "type": "tm.Process",
-              "name": "Web Application Server",
+              "name": "Web Server Backend",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -260,7 +289,7 @@
           {
             "position": {
               "x": 612,
-              "y": -8
+              "y": -70
             },
             "size": {
               "width": 120,
@@ -500,12 +529,80 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "67193d58-ba99-48a1-b2f1-4fb8fae9312e",
+            "source": {
+              "x": 530,
+              "y": 150
+            },
+            "target": {
+              "x": 530,
+              "y": 420
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "2573f272-f056-4220-bb28-748de878aae5",
+            "source": {
+              "x": 520,
+              "y": 110
+            },
+            "target": {
+              "x": 850,
+              "y": 100
+            },
+            "vertices": [
+              {
+                "x": 652,
+                "y": 62
+              }
+            ],
+            "zIndex": 11
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
