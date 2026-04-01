@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "b36847e9-39b6-48c5-90c0-d2ceb7edd784",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Client Frontend",
@@ -183,6 +183,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -206,6 +213,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -545,8 +553,7 @@
                 "denialOfService": 2,
                 "elevationOfPrivilege": 3
               }
-            },
-            "zIndex": 2
+            }
           },
           {
             "position": {
@@ -569,6 +576,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -665,8 +673,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -694,6 +701,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -777,7 +785,6 @@
               ]
             },
             "id": "c728c61d-524b-4aba-8513-ea953d466962",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -956,6 +963,7 @@
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
+            "zIndex": 11,
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
@@ -983,8 +991,7 @@
                 "x": 652,
                 "y": 62
               }
-            ],
-            "zIndex": 11
+            ]
           }
         ]
       }
