@@ -496,6 +496,45 @@
                   "new": false,
                   "number": 27,
                   "score": ""
+                },
+                {
+                  "id": "e45ad783-831a-4de9-911f-8d2e3472c5df",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to\nBarista, Manager, or Administrator functionalities. ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                },
+                {
+                  "id": "33f9ba81-8d8c-49b0-9273-ef6e72f6a963",
+                  "title": "Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator\nprivileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "a0f7a401-4111-4e83-a870-cc8b158ba9f4",
+                  "title": "Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user’s account within the same\nprivilege level.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -504,17 +543,10 @@
                 "repudiation": 2,
                 "informationDisclosure": 4,
                 "denialOfService": 2,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 3
               }
             },
-            "zIndex": 2,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": 2
           },
           {
             "position": {
@@ -959,6 +991,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 30
   }
 }
