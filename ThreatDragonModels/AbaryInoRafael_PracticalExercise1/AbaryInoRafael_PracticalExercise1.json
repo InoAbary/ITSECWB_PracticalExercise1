@@ -551,7 +551,7 @@
           {
             "position": {
               "x": 612,
-              "y": -70
+              "y": -150
             },
             "size": {
               "width": 120,
@@ -919,6 +919,313 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Client sends details/requests to server.",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Client sends details/requests to server."
+            ],
+            "id": "f3d3a8d5-88f7-4b27-92c7-c6d1eaed5d73",
+            "source": {
+              "cell": "b36847e9-39b6-48c5-90c0-d2ceb7edd784",
+              "port": "5baaf945-2592-425c-a68b-76db1d0d758a"
+            },
+            "target": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "74a44228-ec4d-43b5-8cb6-6e155cbccdda"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "7d99b1a6-6a1a-44da-b2c5-471181db55b6",
+            "source": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "74a44228-ec4d-43b5-8cb6-6e155cbccdda"
+            },
+            "target": {
+              "x": 580,
+              "y": 300
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Initiate payment request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Initiate payment request"
+            ],
+            "id": "ac853060-6ad4-413b-b44c-4abc4a6fd1cb",
+            "source": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "9666aef8-1384-48a3-b2a4-bf8eba054cf9"
+            },
+            "target": {
+              "cell": "a43ee9e9-74ca-4723-82dd-f245f128fe26",
+              "port": "dc039f2e-754c-41d3-b4fe-d425bc19811c"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send transaction response (success/failure)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Send transaction response (success/failure)"
+            ],
+            "id": "086a1895-fe66-4f52-93ab-ec7f3e0b6a4e",
+            "source": {
+              "cell": "a43ee9e9-74ca-4723-82dd-f245f128fe26",
+              "port": "dc039f2e-754c-41d3-b4fe-d425bc19811c"
+            },
+            "target": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "9666aef8-1384-48a3-b2a4-bf8eba054cf9"
+            },
+            "vertices": [
+              {
+                "x": 770,
+                "y": 10
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query for client data request.",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Query for client data request."
+            ],
+            "id": "04971477-c266-4c4f-917e-4ed5652f8299",
+            "source": {
+              "x": 760,
+              "y": 290
+            },
+            "target": {
+              "cell": "c728c61d-524b-4aba-8513-ea953d466962",
+              "port": "948b5e3c-bff8-43e6-a1e4-55e37078123c"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send data to server.",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Send data to server."
+            ],
+            "id": "43f3ea85-1414-4af9-b89a-1c72f919008a",
+            "source": {
+              "cell": "c728c61d-524b-4aba-8513-ea953d466962",
+              "port": "948b5e3c-bff8-43e6-a1e4-55e37078123c"
+            },
+            "target": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "5baaf945-2592-425c-a68b-76db1d0d758a"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 370
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -973,20 +1280,68 @@
             "id": "2573f272-f056-4220-bb28-748de878aae5",
             "source": {
               "x": 420,
-              "y": 160
+              "y": 80
             },
             "target": {
               "x": 930,
-              "y": 160
+              "y": 80
             },
             "vertices": [
               {
                 "x": 670,
-                "y": 80
-              },
+                "y": 0
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Server sends details back to clients.",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Server sends details back to clients."
+            ],
+            "id": "bbd7956b-d330-456d-a752-26fbf50e4517",
+            "source": {
+              "cell": "02847c1d-e227-4f58-8598-ebc55a78a8bc",
+              "port": "74a44228-ec4d-43b5-8cb6-6e155cbccdda"
+            },
+            "target": {
+              "cell": "b36847e9-39b6-48c5-90c0-d2ceb7edd784",
+              "port": "5baaf945-2592-425c-a68b-76db1d0d758a"
+            },
+            "zIndex": 16,
+            "vertices": [
               {
-                "x": 820,
-                "y": 80
+                "x": 480,
+                "y": 400
               }
             ]
           }
